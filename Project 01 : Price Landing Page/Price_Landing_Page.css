@@ -1,1 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(90deg, purple 0%,indigo 100% );
+}
 
+h1, h2, p {
+    margin-bottom: 15px;
+    margin-top: 2px;
+}
+.image
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 12px 15px rgba(0, 0, 0,3.5);
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    transition: all 0.2s ease-in;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.choose-button {
+    background-color: red;
+    color: white;
+}
+
+.choose-button:hover {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in;
+    background-image: linear-gradient(180deg,darkblue 10%, blue 90%);
+}
+
+/* Plans Section */
+.plans__container {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-bottom: 0px;
+    border-radius: 20px;
+}
+
+.plansHero__title {
+    font-size: 2.0rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 1.5);
+    text-align: center;
+    background-color: white;
+    color: darkblue;
+    text-transform: uppercase;
+}
+
+/* Plan Items */
+.planItem__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.planItem {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 8.5);
+    margin: 11px;
+    padding: 20px;
+    max-width: 600px;
+    flex: 1 1 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in;
+}
+
+.planItem:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 6.5);
+    .price
+    {
+        color: navy;
+        border-top: 3px solid navy;
+        border-bottom: 3px solid navy;
+        transform: scale(1.1);
+    }
+    .choose-button
+    {
+        transform: scale(1.1);
+    }
+}
+
+.button-header {
+    background-image: linear-gradient(0, darkblue 10%, blue 90%);
+    color: white;
+    padding:9px 30px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.card__header {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 2.5rem;
+    border-top: 2px solid maroon;
+    border-bottom: 2px solid maroon;
+    margin: 10px;
+    color: darkred;
+}
+.price span {
+    font-size: 1.5rem;
+}
+
+.featureList {
+    list-style-position: inside;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.featureList li {
+    padding: 10px 0;
+    border-bottom: 1px solid lavender;
+}
+
+.description
+{
+    font-size: large;
+    color: white;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 3.5);
+    margin: 20px;
+    justify-self: start;
+}
+/* Responsive Design */
+@media (max-width: 1300px) 
+{
+    .planItem__container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
