@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="RegistrationForm.css">
+</head>
+<body>
+   <script src="./RegistrationForm.js"></script>
+   <div class="bg">
+        <div class="shape"></div>
+        <div class="shape"></div>
+   </div>
+</div>
+   <form class="FormFill">
+        <h1>REGISTRATION FORM</h1>
+
+        <label for="username"><h4>Username<sup> *</sup></h4></label>
+        <div class="input-container">
+         <input type="text" placeholder="Enter Username" id="username" required>
+         <i class="fa fa-user icon"></i>
+        </div>
+        <div class="error" id="usernameerror"></div>
+        <label for="email"><h4>Email-ID<sup> *</sup></h4></label>
+        <div class="input-container">
+         <input type="email" placeholder="Enter Email" id="email" required>
+         <i class="fa fa-envelope icon"></i>
+        </div>
+        <div class="error" id="emailerror"></div>
+        <label for="password"><h4>Password<sup> *</sup></h4></label>
+        <div class="input-container">
+         <input type="password" placeholder="Enter Password" id="password" required>
+         <i class="fa fa-lock icon"></i>
+        </div>
+        <div class="error" id="passworderror"></div>
+        <label for="confirmpassword"><h4>Confirm Password<sup> *</sup></h4></label>
+        <div class="input-container">
+         <input type="password" placeholder="Confirm Password" id="confirmpassword" required>
+         <i class="fa fa-lock icon"></i>
+        </div>
+        <div class="error" id="confirmpassworderror"></div>
+        <br><hr>
+        <footer>Note : ( <b>*</b> ) denotes the field is required.</footer>    
+        <hr><br>
+        <button class="button" type="submit"><h3>Submit</h3></button>
+   </form>
+</body>
+</html>
