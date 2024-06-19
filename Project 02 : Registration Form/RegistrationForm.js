@@ -32,6 +32,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('passworderror').textContent = 'Password is required';
             valid = false;
         }
+        else if(password.length < 8)
+        {
+            document.getElementById('passworderror').textContent = 'Password must be at least 8 characters';
+            valid = false;
+        }
 
         // confirm password
         if(confirmPassword === '') {
