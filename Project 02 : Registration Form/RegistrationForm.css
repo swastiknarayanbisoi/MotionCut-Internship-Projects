@@ -193,7 +193,7 @@ button:hover
         font-size: 12px;
     }
 }
-
+/*ScrollBar*/
 ::-webkit-scrollbar
 {
     width: 8px;
