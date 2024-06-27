@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <title>E-commerce Product Page</title>
+    </head>
+    <body>
+        <!-- ===== HEADER ===== -->
+        <header class="header">
+            <!-- ===== NAV ===== -->
+            <nav class="nav grid">
+                <div class="nav__toggle" id="nav-toggle">
+                    <img src="assets/icons/icon-menu.svg" alt="">
+                </div>
+
+                <div>
+                    <a class="nav__logo"><img src="assets/icons/nike-logo.svg" alt=""></a>
+                </div>
+
+                <!-- ===== NAV LIST ===== -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="" class="nav__link">HOME</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">PRODUCTS</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">ABOUT</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">CONTACT US</a></li>
+                    </ul>
+                    
+                </div>
+
+                <div class="nav__shop">
+                    <img src="assets/icons/shopping-bag.svg" alt="">
+                </div>
+            </nav>
+        </header>
+
+        <!-- ===== HOME ===== -->
+        <main class="main grid">
+            <div class="home">
+                <!-- ===== SNEAKER ===== -->
+                <div class="sneaker">
+                    <div class="sneaker__figure">
+                    </div>
+                        
+                    <div>
+                        <img src="assets/img/NikeAirMaxMotion2.png" alt="Black and White" class="sneaker__img" color="#A29596">
+                        <img src="assets/img/NikeAirMax Motion2black.png" alt="Black and Violet" class="sneaker__img shows" color="#111111">
+                    </div>
+                        
+                    <div class="sneaker__colors">
+                        <span class="sneaker__color sneaker__colors-one active" primary="#111111" color="#111111"></span>
+                        <span class="sneaker__color sneaker__colors-two " primary="#A29596" color="#A29596"></span>
+                    </div>
+                </div>
+                <!-- ===== IFORMATION ===== -->
+                <div class="info">
+                    <!-- ===== DATA ===== -->
+                    <div class="data">
+                        <span class="data__subtitle">Nike</span>
+                        <h1 class="data__title">Air Max Motion 2</h1>
+                        <p class="data__description">They combine breathable mesh without seams for a traditional style.</p>
+                        <br>
+                        <span class="price__title">Rs. 7499</span> 
+                    </div>
+
+                    <!-- ===== ACTIONS ===== -->
+                    <div class="actions">
+                        <!-- ===== SIZE ===== -->
+                        <div class="size">
+                            <h3 class="size__title">Sizes (UK/India) :</h3>
+                            <div class="size__content">
+                                <span class="size__tallas active">
+                                    7
+                                </span>
+                                <span class="size__tallas">
+                                    8
+                                </span>
+                                <span class="size__tallas">
+                                    9
+                                </span>
+                                <span class="size__tallas">
+                                    10
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- ===== QUANTITY ===== -->
+                        <div class="quantity">
+                            <h3 class="quantity__title">Quantity :</h3>
+                            <div class="quantity__content"> 
+                                <span class="minus">-</span>
+                                <span class="number">01</span>
+                                <span class="plus">+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== PRICE ===== -->
+                    <div class="price">
+                        <a href="#" class="price__button" id="buy">BUY NOW</a>
+                        <a href="#" class="price__button" id="cart">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            
+            <section id="product-details">
+                <div class="container">
+                    <h2>Product Details</h2>
+                    
+                    <div class="tabs">
+                        <button class="tab-button active" data-tab="specs">Specifications</button>
+                        <button class="tab-button" data-tab="offers">Bank Offers</button>
+                        <button class="tab-button" data-tab="pincode">Pincode Check</button>
+                        <button class="tab-button" data-tab="delivery">Delivery Time</button>
+                    </div>
+                    <hr>
+                    <div id="specs" class="tab-content active">
+                        <h3 class="sub-heading">Specifications</h3>
+                        <table class="product-table">
+                            
+                            <tr>
+                                <td id="bold">Model no. : </td>
+                                <td>NK8AMM2024</td>
+                            </tr>
+                            <tr>
+                                <td id="bold">Color Options : </td>
+                                <td>Black, White | Black, Violet</td>
+                            </tr>
+                            <tr>
+                                <td id="bold">Occasion :</td>
+                                <td>Casual and Formal</td>
+                            </tr>
+                            
+                            <tr>
+                                <td id="bold">Resistant : </td>
+                                <td>Water and Dust Resistant</td>
+                            </tr>
+                    
+                            <tr>
+                                <td id="bold">Warranty Service Type :<u>_______</u></td>
+                                <td>On-site warranty</td>
+                            </tr>
+                            <tr>
+                                <td id="bold">Warranty Period :</td>
+                                <td>12 Months (1 Year)</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="offers" class="tab-content">
+                        <h3>Bank Offers</h3>
+                        <ul>
+                            <li>Offer 1: 10% cashback with XYZ Bank</li>
+                            <li>Offer 2: 10% discount on purchases above<b> Rs. 15999</b></li>
+                            <li>Offer 3: 5% discount on any product with ABC Bank credit cards</li>
+                        </ul>
+                    </div>
+                    <div id="pincode" class="tab-content">
+                        <h3>Check Delivery Availability</h3>
+                        <input type="text" id="pincode-input" placeholder="Enter Pincode">
+                        <button id="check-pincode">Check</button>
+                        <p id="pincode-message"></p>
+                    </div>
+                    <div id="delivery" class="tab-content">
+                        <h3>Estimated Delivery Time</h3>
+                        <p>
+                            <li>
+                                <i class="d-icon">🚚</i> 4 to 6 days (if ordered within 15 minutes)
+                            </li>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <hr>
+            <footer class="footer-distributed">
+
+                <div class="footer-left">
+    
+                    <img src="./assets/img/logo1.png">
+    
+                    <p class="footer-links">
+                        <a href="#" class="link-1">Home</a>
+                    
+                        <a href="#">Products</a>
+                    
+                        <a href="#">About</a>
+                        
+                        <a href="#">Contact us</a>
+                    </p>
+    
+                    <p class="footer-company-name">NikeConcept © 2024</p>
+                </div>
+    
+                <div class="footer-center">
+    
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>Infocity Ave, Patia</span> Bhubaneswar, Odisha, India, 751024</p>
+                    </div>
+    
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+91-9X9X3X7X20</p>
+                    </div>
+    
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@company.com">support@company.com</a></p>
+                    </div>
+    
+                </div>
+    
+                <div class="footer-right">
+    
+                    <p class="footer-social">
+                        <span>Social Media : </span>
+                    </p>
+    
+                    <div class="footer-icons">
+    
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+    
+                    </div>
+    
+                </div>
+    
+            </footer>
+        </main>
+        
+        <!-- MAIN -->
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
