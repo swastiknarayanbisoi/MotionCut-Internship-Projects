@@ -334,7 +334,7 @@ li:hover .action{
     pointer-events: auto;
 }
 
-/*==== Responsive Design ====*/
+/*==== Responsive ====*/
 
 /*Small Devices*/
 @media screen and (max-width: 450px)
