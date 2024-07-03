@@ -336,7 +336,7 @@ li:hover .action{
 
 /*==== Responsive Design ====*/
 
-/*Small Devices*/
+/*For Small Devices*/
 @media screen and (max-width: 450px)
 {
     .notification{
@@ -425,7 +425,7 @@ li:hover .action{
     
 }
 
-/*Large Devices*/
+/*For Large Devices*/
 @media screen and (min-width: 500px)
 {
     .container{
